@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"/> 
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/medium.css">
+  </head>
+  <body>
+    <section class="hero p-1">
+      <div class="container">
+        <h1>Weather <span>App<span><i class="fas fa-sun pl-1"></i></h1>
+        <h3>Search for weather data on any location in the world!</h3>
+        <form>
+           <div class="input-field">
+            <input type="text" placeholder="Search for a city" />
+            <button type="submit">Search</button>
+          </div>
+            <div>
+            <span class="msg"></span>
+          </div> 
+        </form>
+      </div>
+    </section>
+    <section class="ajax-section">
+      <div class="city-title"></div>
+      <div class="current-weather">
+        
+      </div>
+      <div class="container p-2">
+        <ul class="cities"></ul>
+      </div>
+    </section>
+
+  <!--   <script src="assets/test.js"></script> -->
+    <script src="assets/app.js"></script>
+    <script src="assets/time.js"></script>
+
+  </body>
+</html>

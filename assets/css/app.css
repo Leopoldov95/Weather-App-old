@@ -1,0 +1,200 @@
+:root {
+  --bg_main: #fff;
+  --font-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg_main);
+  color: var(--font-color);
+}
+
+button:focus {
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(13, 105, 180) !important;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+/* Utilities */
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+/* main css */
+.hero {
+  text-align: center;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.hero .container h1 > span {
+  color: steelblue;
+}
+
+.hero .container h1 i {
+  color: rgb(250, 111, 60);
+}
+
+.hero .input-field {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .input-field input {
+  height: 3rem;
+  width: 40%;
+  padding-left: 10px;
+  font-size: 1.5rem;
+  border: 1px solid steelblue;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.hero .input-field input:focus {
+  outline: steelblue;
+  border: 2px solid steelblue;
+  caret-color: #333;
+}
+
+.hero .input-field button {
+  padding: 15px 14px 14px 14px;
+  background-color: steelblue;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* AJAX section - cards */
+
+.ajax-section .city-title h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.ajax-section h2 i {
+  margin-right: 1rem;
+}
+
+.ajax-section .pin {
+  color: red;
+}
+
+.ajax-section .city-title h2 sup {
+  margin-left: 1rem;
+  font-size: 14px;
+  background-color: steelblue;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+.ajax-section .container {
+  display: flex;
+}
+.ajax-section .container .city {
+  color: #fff;
+  background-color: steelblue;
+  border-radius: 12px;
+  width: 300px;
+  height: 400px;
+  margin: 0 1rem;
+  padding: 2rem;
+}
+
+.ajax-section .container .city h4 {
+  padding: 0.8rem 0;
+  font-size: 1.6rem;
+}
+
+.ajax-section .container .city .city-temp {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.ajax-section .container .city .city-icon {
+  font-size: 5rem;
+  padding-top: 0.6rem;
+}
+
+.ajax-section .container .city figcaption {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.ajax-section .cities {
+  display: flex !important;
+}
+
+.ajax-section .current-weather-container {
+  display: flex;
+
+  margin: auto;
+  margin-top: 1rem;
+  justify-content: space-between;
+  width: 500px;
+  background-color: rgb(204, 204, 204);
+  border-radius: 10px;
+}
+
+.ajax-section .current-weather-container h4 {
+  font-size: 1.4rem;
+}
+
+.ajax-section .current-weather-container h2 {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.ajax-section .current-weather-container p {
+  padding-left: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Dropdown autocomplete */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.results {
+  max-height: 500px;
+  overflow-y: scroll;
+}
